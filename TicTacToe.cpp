@@ -7,10 +7,7 @@
 
 
 void TicTacToe::initBoard(){
-    for (int i=0; i<m_size; i++) {
-    	m_board.push_back(std::vector<char>());
-        m_board[i].assign(m_size, m_blank);
-    }
+    m_board(m_size, std::vector<char>(m_size, m_blank));
 }
 
 
